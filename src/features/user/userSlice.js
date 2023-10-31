@@ -1,11 +1,3 @@
-// /* eslint-disable no-unused-vars */
-// /* eslint-disable no-undef */
-// function getPosition() {
-//   return new Promise(function (resolve, reject) {
-//     navigator.geolocation.getCurrentPosition(resolve, reject);
-//   });
-// }
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -24,4 +16,4 @@ const userSlice = createSlice({
 
 export const { updateName } = userSlice.actions;
 
-export default userSlice;
+export default userSlice.reducer;
